@@ -55,20 +55,23 @@ cv2.destroyAllWindows()
 
 # Basic Image Operations (Resizing,Cropping,Rotating)
 
-# Resizing :
+# Resizing image:
 img = cv2.imread('img1.png')
 resized_img = cv2.resize(img,(850,550)) # (width,height)
 cv2.imshow("Image Output",resized_img)
 cv2.waitKey()
 
+# Resizing Window:
+cv2.resizeWindow('windowname',500,500)
+
 # Cropping :
 img = cv2.imread("img1.png")
-rows, cols, test = img.shape 
+rows, cols, test = img.shape
 #shape takes 3 parameters height/rows, width/cols ,color channel(bgr = 3,grayscale = 1)
 print("Rows :",rows)
 print("Cols :",cols)
 print("what : ",test)
-cv2.rectangle(img,(10,50),(350,310),(0,255,0),1) #img,top-left point,bottom-right point,color,thickness
+cv2.rectangle(img,(10,50),(350,310),(0,0,255),1) #img,top-left point,bottom-right point,color(bgr),thickness
 cropped_img = img[50:310,10:350] # called as ROI (Range of interest)
 #img[0:692,0:501] gives us a complete image
 cv2.imshow("Output",img)
