@@ -1,30 +1,5 @@
 import cv2
 
-#img reading
-
-"""
-img = cv2.imread('580987.jpg')
-width,height = 500,500
-imge = cv2.resize(img,(width,height))
-print(imge.shape)
-cv2.imshow("Resized Output", imge)
-cv2.waitKey(5000)
-"""
-
-#video reading
-"""
-cap = cv2.VideoCapture(0)
-cap.set(3,840)
-cap.set(4,480)
-cap.set(10,200)
-
-while True:
-    success, img = cap.read()
-    #resizedVideo = cv2.resize(img, (width, height))
-    cv2.imshow("Resized Output",img)
-    if cv2.waitKey(1) & 0xFF == ord('d'):
-        break
-"""
 
 #changing image Colour(basic functions)
 """
